@@ -17,6 +17,7 @@ import {
   Trash2,
   Shield,
   Save,
+} from "lucide-react";
 import { Button } from "../ui/button";
 import { Logo } from "../ui/logo";
 
