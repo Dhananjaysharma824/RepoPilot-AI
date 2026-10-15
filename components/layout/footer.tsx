@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { Sparkles, Shield, X, Lock, FileText, CheckCircle2 } from "lucide-react";
 import { GithubIcon, TwitterIcon } from "../ui/icons";
+import { Logo } from "../ui/logo";
 
 export function Footer() {
   const [activeModal, setActiveModal] = useState<"privacy" | "terms" | "security" | null>(null);
@@ -14,13 +15,8 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Brand Col */}
           <div className="md:col-span-1 space-y-4">
-            <Link href="/" className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-xl bg-[#8B9A6E] p-0.5 shadow-md shadow-[#8B9A6E]/20">
-                <div className="w-full h-full bg-[#1E241B] dark:bg-[#0B0F12] rounded-[10px] flex items-center justify-center">
-                  <Sparkles className="w-4 h-4 text-[#8B9A6E]" />
-                </div>
-              </div>
-              <span className="font-bold text-base text-[#1E241B] dark:text-white">RepoPilot AI</span>
+            <Link href="/" className="flex items-center group hover:opacity-90 transition-opacity">
+              <Logo size="md" />
             </Link>
             <p className="text-xs text-[#5A6653] dark:text-slate-400 leading-relaxed">
               Understand any GitHub repository in minutes. Automated tech stack detection, folder visualization, and AI developer onboarding.

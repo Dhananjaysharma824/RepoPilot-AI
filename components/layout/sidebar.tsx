@@ -17,8 +17,8 @@ import {
   Trash2,
   Shield,
   Save,
-} from "lucide-react";
 import { Button } from "../ui/button";
+import { Logo } from "../ui/logo";
 
 function SidebarContent() {
   const pathname = usePathname();
@@ -136,15 +136,8 @@ function SidebarContent() {
       <aside className="w-64 border-r border-[#EAE2D6] dark:border-[#222C35] bg-[#F7F2EB] dark:bg-[#0B0F12] flex flex-col justify-between h-screen sticky top-0 shrink-0 transition-colors duration-200">
         <div className="p-4">
           {/* Brand */}
-          <Link href="/" className="flex items-center gap-2.5 px-3 py-3 mb-6 group">
-            <div className="w-8 h-8 rounded-xl bg-[#8B9A6E] p-0.5 shadow-md shadow-[#8B9A6E]/20 group-hover:scale-105 transition-transform duration-200">
-              <div className="w-full h-full bg-[#1E241B] dark:bg-[#0B0F12] rounded-[10px] flex items-center justify-center">
-                <Sparkles className="w-4 h-4 text-[#8B9A6E]" />
-              </div>
-            </div>
-            <span className="font-bold text-base text-[#1E241B] dark:text-white tracking-tight">
-              RepoPilot <span className="text-[#8B9A6E] font-semibold">AI</span>
-            </span>
+          <Link href="/" className="flex items-center px-3 py-3 mb-6 group hover:opacity-90 transition-opacity">
+            <Logo size="md" />
           </Link>
 
           {/* Navigation */}
