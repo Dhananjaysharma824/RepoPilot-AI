@@ -18,11 +18,11 @@ export function RepoStructureSection({ structure, folderTree }: RepoStructurePro
       <CardHeader>
         <div className="flex items-center justify-between flex-wrap gap-2">
           <div className="flex items-center gap-2">
-            <FolderTree className="w-5 h-5 text-indigo-400" />
+            <FolderTree className="w-5 h-5 text-[#8B9A6E]" />
             <CardTitle className="text-xl font-bold">Repository Structure & Key Modules</CardTitle>
           </div>
           <div className="flex items-center gap-2">
-            <Badge variant="indigo">{structure.totalFolders} Folders</Badge>
+            <Badge variant="sage">{structure.totalFolders} Folders</Badge>
             <Badge variant="slate">{structure.totalFiles} Files</Badge>
           </div>
         </div>
@@ -34,9 +34,9 @@ export function RepoStructureSection({ structure, folderTree }: RepoStructurePro
       {/* Grid: Root Folders & Important Files */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Root Folders Card */}
-        <div className="bg-[#F7F2EB] dark:bg-slate-950/80 p-4 rounded-xl border border-[#EAE2D6] dark:border-slate-800 space-y-3">
+        <div className="bg-[#F7F2EB] dark:bg-[#0B0F12] p-4 rounded-xl border border-[#EAE2D6] dark:border-[#222C35] space-y-3">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#1E241B] dark:text-slate-300">
-            <Folder className="w-4 h-4 text-indigo-500 dark:text-indigo-400" />
+            <Folder className="w-4 h-4 text-[#8B9A6E]" />
             <span>Root Folders</span>
           </div>
           <div className="space-y-2 max-h-64 overflow-y-auto pr-1">
@@ -44,9 +44,9 @@ export function RepoStructureSection({ structure, folderTree }: RepoStructurePro
               structure.rootFolders.map((folder, idx) => (
                 <div
                   key={idx}
-                  className="p-2.5 rounded-lg bg-white/80 dark:bg-slate-900/90 border border-[#EAE2D6] dark:border-slate-800/80 flex items-start gap-2.5 hover:border-[#8B9A6E]/50 dark:hover:border-slate-700 transition-colors"
+                  className="p-2.5 rounded-lg bg-white/80 dark:bg-[#141A1F] border border-[#EAE2D6] dark:border-[#222C35] flex items-start gap-2.5 hover:border-[#8B9A6E]/50 dark:hover:border-[#8B9A6E]/50 transition-colors"
                 >
-                  <Folder className="w-4 h-4 text-indigo-500 dark:text-indigo-400 shrink-0 mt-0.5" />
+                  <Folder className="w-4 h-4 text-[#8B9A6E] shrink-0 mt-0.5" />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center justify-between">
                       <span className="text-xs font-semibold text-[#1E241B] dark:text-slate-200 font-mono">/{folder.name}</span>
@@ -65,9 +65,9 @@ export function RepoStructureSection({ structure, folderTree }: RepoStructurePro
         </div>
 
         {/* Important Files Card */}
-        <div className="bg-[#F7F2EB] dark:bg-slate-950/80 p-4 rounded-xl border border-[#EAE2D6] dark:border-slate-800 space-y-3">
+        <div className="bg-[#F7F2EB] dark:bg-[#0B0F12] p-4 rounded-xl border border-[#EAE2D6] dark:border-[#222C35] space-y-3">
           <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#1E241B] dark:text-slate-300">
-            <FileCheck className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
+            <FileCheck className="w-4 h-4 text-[#8B9A6E]" />
             <span>Important Configuration Files</span>
           </div>
           <div className="space-y-2 max-h-64 overflow-y-auto pr-1">
@@ -75,9 +75,9 @@ export function RepoStructureSection({ structure, folderTree }: RepoStructurePro
               structure.importantFiles.map((file, idx) => (
                 <div
                   key={idx}
-                  className="p-2.5 rounded-lg bg-white/80 dark:bg-slate-900/90 border border-[#EAE2D6] dark:border-slate-800/80 flex items-start gap-2.5 hover:border-[#8B9A6E]/50 dark:hover:border-slate-700 transition-colors"
+                  className="p-2.5 rounded-lg bg-white/80 dark:bg-[#141A1F] border border-[#EAE2D6] dark:border-[#222C35] flex items-start gap-2.5 hover:border-[#8B9A6E]/50 dark:hover:border-[#8B9A6E]/50 transition-colors"
                 >
-                  <FileText className="w-4 h-4 text-cyan-600 dark:text-cyan-400 shrink-0 mt-0.5" />
+                  <FileText className="w-4 h-4 text-[#8B9A6E] shrink-0 mt-0.5" />
                   <div className="min-w-0 flex-1">
                     <div className="flex items-center justify-between">
                       <span className="text-xs font-semibold text-[#1E241B] dark:text-slate-200 font-mono">{file.name}</span>
@@ -95,10 +95,10 @@ export function RepoStructureSection({ structure, folderTree }: RepoStructurePro
       </div>
 
       {/* Expandable Folder Tree Section */}
-      <div className="pt-2 border-t border-[#EAE2D6] dark:border-slate-800/80 space-y-3">
+      <div className="pt-2 border-t border-[#EAE2D6] dark:border-[#222C35] space-y-3">
         <div className="flex items-center justify-between">
           <h4 className="text-xs font-semibold uppercase tracking-wider text-[#1E241B] dark:text-slate-300 flex items-center gap-2">
-            <Layers className="w-4 h-4 text-violet-600 dark:text-violet-400" />
+            <Layers className="w-4 h-4 text-[#8B9A6E]" />
             <span>Interactive Folder Tree</span>
           </h4>
         </div>

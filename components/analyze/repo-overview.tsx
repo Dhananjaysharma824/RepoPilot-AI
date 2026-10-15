@@ -15,7 +15,7 @@ export function RepoOverview({ repo }: RepoOverviewProps) {
       <CardHeader className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
         <div className="flex items-start gap-3.5">
           {/* Owner Avatar */}
-          <div className="w-12 h-12 rounded-xl overflow-hidden border border-[#EAE2D6] dark:border-[#222C35] shrink-0 bg-[#EAE2D6] dark:bg-slate-900">
+          <div className="w-12 h-12 rounded-xl overflow-hidden border border-[#EAE2D6] dark:border-[#222C35] shrink-0 bg-[#EAE2D6] dark:bg-[#141A1F]">
             {repo.owner_avatar ? (
               <img
                 src={repo.owner_avatar}

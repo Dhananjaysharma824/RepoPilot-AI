@@ -120,7 +120,7 @@ export function TechStackSection({ stack, categorizedStack }: TechStackProps) {
               className="p-3.5 bg-[#F7F2EB] dark:bg-[#0B0F12] rounded-xl border border-[#EAE2D6] dark:border-[#222C35] flex items-center justify-between hover:border-[#8B9A6E]/50 transition-all shadow-xs"
             >
               <div className="flex items-center gap-3 min-w-0">
-                <div className="w-8 h-8 rounded-lg bg-[#EAE2D6] dark:bg-slate-900 border border-[#8B9A6E]/30 flex items-center justify-center shrink-0">
+                <div className="w-8 h-8 rounded-lg bg-[#EAE2D6] dark:bg-[#141A1F] border border-[#8B9A6E]/30 flex items-center justify-center shrink-0">
                   {item.category === "Database" ? (
                     <Database className="w-4 h-4 text-emerald-700 dark:text-emerald-400" />
                   ) : item.category === "Styling" ? (

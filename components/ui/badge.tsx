@@ -20,7 +20,7 @@ export function Badge({
     cyan: "bg-[#EEEEEE] dark:bg-[#1A232A] text-[#4E5B47] dark:text-[#A4B58A] border-[#8B9A6E]/20",
     emerald: "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-500/20",
     amber: "bg-amber-500/10 text-amber-800 dark:text-amber-400 border-amber-500/20",
-    slate: "bg-[#EEEEEE] dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-300 dark:border-slate-700",
+    slate: "bg-[#EEEEEE] dark:bg-[#1E272E] text-slate-700 dark:text-slate-300 border-slate-300 dark:border-[#2D3844]",
   };
 
   return (
